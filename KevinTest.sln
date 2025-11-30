@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionApi", "SessionApi\SessionApi.csproj", "{3B7832FE-3403-431B-BC33-530476990A15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{6872398E-D949-4237-83AA-7D4ABCE975C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B7832FE-3403-431B-BC33-530476990A15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B7832FE-3403-431B-BC33-530476990A15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B7832FE-3403-431B-BC33-530476990A15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B7832FE-3403-431B-BC33-530476990A15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6872398E-D949-4237-83AA-7D4ABCE975C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6872398E-D949-4237-83AA-7D4ABCE975C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6872398E-D949-4237-83AA-7D4ABCE975C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6872398E-D949-4237-83AA-7D4ABCE975C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
