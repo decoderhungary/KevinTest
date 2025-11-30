@@ -16,7 +16,7 @@ public class SessionsController(IMediator mediator) : ControllerBase
     [HttpPost]
     [Route("start")]
     [Idempotent<StartSessionResult>]
-    public async Task<ActionResult> Start(SessionStartRequest request, CancellationToken cancellationToken = default)
+    public async Task<ActionResult> StartAsync(SessionStartRequest request, CancellationToken cancellationToken = default)
     {
         var validationResult =
             await mediator.Send(new ValidateSessionStartRequest { Payload = request }, cancellationToken);
@@ -34,7 +34,7 @@ public class SessionsController(IMediator mediator) : ControllerBase
     }
 
     [HttpGet("{sessionId}")]
-    public async Task<ActionResult> OnGet(string sessionId, CancellationToken cancellationToken = default)
+    public async Task<ActionResult> OnGetAsync(string sessionId, CancellationToken cancellationToken = default)
     {
         if (string.IsNullOrEmpty(sessionId)) return BadRequest();
 
