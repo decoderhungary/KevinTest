@@ -19,6 +19,8 @@ public class DiagnosticsController(IMediator mediator, IServiceBase<Session> ser
     public async Task<ActionResult> OnGetAsync([FromQuery] int iterations,
         CancellationToken cancellationToken = default)
     {
+        if (iterations <= 0) return BadRequest("Iterations must be greater than 0");
+        
         var sampleSession = await service.GetAsQueryable().FirstOrDefaultAsync(cancellationToken);
 
         if (sampleSession is null) return new NotFoundResult();
